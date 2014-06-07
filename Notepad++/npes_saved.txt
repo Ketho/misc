@@ -1,0 +1,45 @@
+::PHP
+php "$(FULL_CURRENT_PATH)"
+::Java
+cd "$(CURRENT_DIRECTORY)"
+javac "$(FILE_NAME)"
+java "$(NAME_PART)"
+::Java *
+cd "$(CURRENT_DIRECTORY)"
+javac *.java
+java "$(NAME_PART)"
+::C
+cd "$(CURRENT_DIRECTORY)"
+gcc "$(FILE_NAME)" -o "$(NAME_PART).exe" -std=c99
+npp_run cmd.exe /k cmd /c "$(NAME_PART).exe"
+::C++
+cd "$(CURRENT_DIRECTORY)"
+g++ "$(FILE_NAME)" -o "$(NAME_PART).exe"
+npp_run cmd.exe /k cmd /c "$(NAME_PART).exe"
+::Python
+python "$(FULL_CURRENT_PATH)"
+::Ruby
+ruby "$(FULL_CURRENT_PATH)"
+::Lua 5.2
+lua52 "$(FULL_CURRENT_PATH)"
+::Lua 5.1
+lua5.1.exe "$(FULL_CURRENT_PATH)"
+::Assembly gcc
+cd "$(CURRENT_DIRECTORY)"
+gcc "$(FILE_NAME)" -o "$(NAME_PART).exe"
+npp_run cmd.exe /k cmd /c "$(NAME_PART).exe"
+::Assembly nasm
+cd "$(CURRENT_DIRECTORY)"
+nasm "$(FILE_NAME)" -o "$(NAME_PART).o" -fwin32
+gcc "$(NAME_PART).o" -o "$(NAME_PART).exe"
+npp_run cmd.exe /k cmd /c "$(NAME_PART).exe"
+::C to asm
+gcc -S -m32 "$(FULL_CURRENT_PATH)"
+::leJOS
+cd "$(CURRENT_DIRECTORY)"
+nxjc.bat "$(FILE_NAME)"
+nxj.bat -r -o "$(NAME_PART).nxj" "$(NAME_PART)"
+::leJOS PC
+cd "$(CURRENT_DIRECTORY)"
+nxjpcc.bat "$(FILE_NAME)"
+nxjpc.bat "$(NAME_PART)"
