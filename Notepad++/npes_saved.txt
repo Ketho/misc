@@ -10,8 +10,8 @@ javac *.java
 java "$(NAME_PART)"
 ::C
 cd "$(CURRENT_DIRECTORY)"
-gcc "$(FILE_NAME)" -o "$(NAME_PART).exe" -std=c11
-cmd /c "$(NAME_PART).exe"
+gcc "$(FILE_NAME)" -o "$(NAME_PART)" -std=c11
+cmd /c "$(NAME_PART)"
 ::C++
 cd "$(CURRENT_DIRECTORY)"
 g++ "$(FILE_NAME)" -o "$(NAME_PART).exe"
@@ -24,16 +24,10 @@ ruby "$(FULL_CURRENT_PATH)"
 lua52 "$(FULL_CURRENT_PATH)"
 ::Lua 5.1
 lua5.1.exe "$(FULL_CURRENT_PATH)"
-::Assembly gcc
-cd "$(CURRENT_DIRECTORY)"
-gcc "$(FILE_NAME)" -o "$(NAME_PART)"
-cmd /c "$(NAME_PART)"
-::Assembly nasm
+::asm nasm
 cd "$(CURRENT_DIRECTORY)"
 nasm "$(FILE_NAME)" -o "$(NAME_PART).o" -fwin64
-gcc "$(NAME_PART).o" -o "$(NAME_PART).exe"
-cmd /c "$(NAME_PART).exe"
-::C to asm
+gcc "$(NAME_PART).o" -o "$(NAME_PART)"
+cmd /c "$(NAME_PART)"
+::C/C++ to asm
 gcc "$(FULL_CURRENT_PATH)" -S -std=c11
-::Lua to C
-lua5.1.exe E:\Software\Ready\lua2c\lua2c.lua "$(FULL_CURRENT_PATH)"
