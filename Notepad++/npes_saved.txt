@@ -2,19 +2,21 @@
 php "$(FULL_CURRENT_PATH)"
 ::Java
 cd "$(CURRENT_DIRECTORY)"
-javac "$(FILE_NAME)"
+javac "$(FILE_NAME)" -J-Duser.language=en
 java "$(NAME_PART)"
 ::Java *
 cd "$(CURRENT_DIRECTORY)"
-javac *.java
+javac -J-Duser.language=en *.java
 java "$(NAME_PART)"
-::C
+::C/ASM
 cd "$(CURRENT_DIRECTORY)"
-gcc "$(FILE_NAME)" -o "$(NAME_PART)" -std=c11
+gcc -o "$(NAME_PART)" "$(FILE_NAME)" -std=c11
 cmd /c "$(NAME_PART)"
+::Lua FindGlobals
+cmd /c luac5.1 -l -p "$(FULL_CURRENT_PATH)" | lua5.1 "D:\Software\Library\findglobals\globals.lua" "$(FULL_CURRENT_PATH)"
 ::C++
 cd "$(CURRENT_DIRECTORY)"
-g++ "$(FILE_NAME)" -o "$(NAME_PART).exe"
+g++ -o "$(NAME_PART).exe" "$(FILE_NAME)" -std=c++11
 cmd /c "$(NAME_PART).exe"
 ::Python
 python "$(FULL_CURRENT_PATH)"
@@ -24,10 +26,12 @@ ruby "$(FULL_CURRENT_PATH)"
 lua52 "$(FULL_CURRENT_PATH)"
 ::Lua 5.1
 lua5.1.exe "$(FULL_CURRENT_PATH)"
-::asm nasm
+::NASM
 cd "$(CURRENT_DIRECTORY)"
-nasm "$(FILE_NAME)" -o "$(NAME_PART).o" -fwin64
-gcc "$(NAME_PART).o" -o "$(NAME_PART)"
+nasm -o "$(NAME_PART).o" "$(FILE_NAME)" -fwin32
+gcc -o "$(NAME_PART)" "$(NAME_PART).o"
 cmd /c "$(NAME_PART)"
-::C/C++ to asm
-gcc "$(FULL_CURRENT_PATH)" -S -std=c11
+::C to ASM
+gcc -S "$(FULL_CURRENT_PATH)"
+::Lua 5.2 mingw
+lua "$(FULL_CURRENT_PATH)"
