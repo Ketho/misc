@@ -1,0 +1,4 @@
+class FlapException extends Exception
+{
+}
+

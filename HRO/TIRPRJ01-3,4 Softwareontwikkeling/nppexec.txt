@@ -1,0 +1,12 @@
+-- Notepad++; NppExec plugin
+-- add \leJOS NXJ\bin\ to Path
+
+::compile, upload to NXT and run
+cd "$(CURRENT_DIRECTORY)"
+nxjc.bat "$(FILE_NAME)"
+nxj.bat -r -o "$(NAME_PART).nxj" "$(NAME_PART)"
+
+::compile and run on PC; or import pccomm.jar in an IDE
+cd "$(CURRENT_DIRECTORY)"
+nxjpcc.bat "$(FILE_NAME)"
+nxjpc.bat "$(NAME_PART)"

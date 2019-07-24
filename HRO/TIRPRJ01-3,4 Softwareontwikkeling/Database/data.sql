@@ -1,0 +1,22 @@
+USE fmb;
+
+INSERT INTO Klant
+(Id,Naam)
+VALUES
+(1,'Maurits'),
+(2,'Angelo'),
+(3,'Peter');
+
+INSERT INTO Rekening
+(Id,Klantid,Klantnaam,PinpasId,Saldo)
+VALUES
+(9756346,1,'Maurits',437658,25),
+(3429256,2,'Angelo',437658,50),
+(2769115,3,'Peter',476527,0);
+
+INSERT INTO Pinpas
+(Id,Klantid,Klantnaam,Rekeningid,Pincode,Pogingen,Verloopdatum,track1,track2)
+VALUES
+(437658,1,'Maurits',9756346,1234,0,'2016-10-01 00:00:00','%9756346^M.MEEUSEN^437658^FMB?',';9756346=437658=1609?'),
+(678968,2,'Angelo',3429256,9999,0,'2016-10-01 00:00:00','%3429256^A.HOVENGA^678968^FMB?',';3429256=678968=1609?'),
+(476527,3,'Peter',2769115,1111,0,'2016-10-01 00:00:00','%2769115^SC.NG^476527^FMB?',';2769115=476527=1609?');

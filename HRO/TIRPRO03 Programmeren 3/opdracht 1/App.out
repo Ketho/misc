@@ -1,0 +1,25 @@
+CrashException: 
+	Flight: 392006
+	Flaps: 2
+CrashException: 
+	Flight: 392797
+	Pilots: 3
+CrashException: 
+	Flight: 803646
+	Flaps: 2
+	Pilots: 1
+CrashException: 
+	Flight: 4120998
+	Flaps: 2
+CrashException: 
+	Flight: 4421751
+	Flaps: 2
+CrashException: 
+	Flight: 8012961
+	Pilots: 3
+
+For 10000000 flights:
+	6 airplanes crashed
+	39740 (0.10%) engines malfunctioned
+	10109 (0.05%) flaps broke off
+	149810 (0.50%) pilots dozed off

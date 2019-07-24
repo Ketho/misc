@@ -1,0 +1,4 @@
+class PilotException extends Exception
+{
+}
+

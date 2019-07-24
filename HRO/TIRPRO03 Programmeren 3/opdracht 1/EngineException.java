@@ -1,0 +1,4 @@
+class EngineException extends Exception
+{
+}
+

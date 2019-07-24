@@ -1,0 +1,36 @@
+License plate: 12-AB-CD
+Doors: 4
+Color: Blue
+Brand: Peugot
+Type: Normal
+Max velocity: 120
+Fuel consumption: 6.2
+Price: 14999
+--
+License plate: 99-XX-XX
+Doors: 2
+Color: White
+Brand: Smart
+Type: Normal
+Max velocity: 110
+Fuel consumption: 5.0
+Price: 9995
+--
+License plate: 99-XX-XX
+Doors: 4
+Color: Pink
+Brand: Peugot
+Type: Normal
+Max velocity: 140
+Fuel consumption: 5.0
+Price: 14999
+--
+Contents of Auto array:
+0	Auto@6f5f6479
+1	Auto@5fbd7d0e
+2	Auto@115d533d
+3	Auto@603d2b3
+4	Auto@64fde8da
+--
+Pointer to fastest car: Auto@5fbd7d0e
+Max velocity: 193
