@@ -1,0 +1,57 @@
+{
+	// See https://go.microsoft.com/fwlink/?LinkId=733558
+	// for the documentation about the tasks.json format
+	"version": "2.0.0",
+	"tasks": [
+		{
+			"label": "Lua 5.1",
+			"type": "shell",
+			"command": "cd ${fileDirname} lua5.1 '${file}'",
+			"presentation": {
+				"showReuseMessage": false,
+				"clear": true
+			},
+			"problemMatcher": [],
+		},
+		{
+			"label": "Lua 5.3",
+			"type": "shell",
+			"command": "lua '${file}'",
+			"presentation": {
+				"showReuseMessage": false,
+				"clear": true
+			},
+			"problemMatcher": [],
+		},
+		{
+			"label": "LuaJIT",
+			"type": "shell",
+			"command": "luajit '${file}'",
+			"presentation": {
+				"showReuseMessage": false,
+				"clear": true
+			},
+			"problemMatcher": [],
+		},
+		{
+			"label": "Luacheck",
+			"type": "shell",
+			"command": "luacheck '${file}'",
+			"presentation": {
+				"showReuseMessage": false,
+				"clear": true
+			},
+			"problemMatcher": [],
+		},
+		{
+			"label": "Test",
+			"type": "shell",
+			"command": "echo '${file}'",
+			"presentation": {
+				"showReuseMessage": false,
+				"clear": true
+			},
+			"problemMatcher": [],
+		},
+	]
+}

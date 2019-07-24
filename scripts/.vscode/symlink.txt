@@ -1,0 +1,2 @@
+-- https://stackoverflow.com/questions/894430/creating-hard-and-soft-links-using-powershell
+New-Item -Path .vscode -ItemType SymbolicLink -Value E:\SynologyDrive\Scripts\.vscode
