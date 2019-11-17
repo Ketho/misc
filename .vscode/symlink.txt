@@ -1,0 +1,5 @@
+-- https://stackoverflow.com/questions/894430/creating-hard-and-soft-links-using-powershell
+-- ngsc-pc
+New-Item -Path .vscode -ItemType SymbolicLink -Value E:\SynologyDrive\Scripts\.vscode
+-- ngsc-laptop
+New-Item -Path .vscode -ItemType SymbolicLink -Value D:\SynologyDrive\Scripts\.vscode
