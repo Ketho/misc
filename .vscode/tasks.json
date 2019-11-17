@@ -103,6 +103,17 @@
 				"clear": true
 			},
 			"problemMatcher": [],
+		},
+		{
+			"label": "Java",
+			"type": "shell",
+			//"command": "javac '${file}' | java '${fileDirname}\\${fileBasenameNoExtension}'",
+			"command": "cd '${fileDirname}' | javac '${fileBasename}' | java '${fileBasenameNoExtension}'",
+			"presentation": {
+				"showReuseMessage": false,
+				"clear": true
+			},
+			"problemMatcher": [],
 		}
 	]
 }
