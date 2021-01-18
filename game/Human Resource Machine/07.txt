@@ -1,0 +1,12 @@
+-- HUMAN RESOURCE MACHINE PROGRAM --
+-- size 4/4
+-- speed 23/23
+
+a:
+b:
+    INBOX   
+    JUMPZ    b
+    OUTBOX  
+    JUMP     a
+
+

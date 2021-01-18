@@ -1,0 +1,12 @@
+-- HUMAN RESOURCE MACHINE PROGRAM --
+-- size 6/6
+-- speed 6/6
+
+INBOX   
+OUTBOX  
+INBOX   
+OUTBOX  
+INBOX   
+OUTBOX  
+
+

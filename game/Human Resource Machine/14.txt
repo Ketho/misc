@@ -1,0 +1,41 @@
+-- HUMAN RESOURCE MACHINE PROGRAM --
+-- size 17/10
+-- speed 39/34
+
+a:
+b:
+c:
+    INBOX   
+    COPYTO   0
+    INBOX   
+    COPYTO   1
+    SUB      0
+    JUMPN    d
+    JUMPZ    e
+    JUMP     f
+d:
+    COMMENT  0
+    COPYFROM 0
+    OUTBOX  
+    JUMP     a
+e:
+    COMMENT  1
+    COPYFROM 0
+    OUTBOX  
+    JUMP     b
+f:
+    COMMENT  2
+    COPYFROM 1
+    OUTBOX  
+    JUMP     c
+
+
+DEFINE COMMENT 0
+eJzjYGBg+Ju0weRSkVHKoQr34uK6a7WWNTFNcXkbJjwO6V/GMApGwSgY1gAA5PgOaQ;
+
+DEFINE COMMENT 1
+eJzjYGBgYPTSM14Y+t44rHCNIZDLcMVJsKostb8ismByNcMoGAWjYFgDAJ7TCcs;
+
+DEFINE COMMENT 2
+eJzjZGBguOnAUZIasiJmQnGdHZDLIOzMUpgenNntE+u+sLs08SHDKBgFo2DYAgDlHwtn;
+

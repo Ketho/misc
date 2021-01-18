@@ -1,0 +1,17 @@
+-- HUMAN RESOURCE MACHINE PROGRAM --
+-- size 8/8
+-- speed 40/36
+
+a:
+    INBOX   
+    JUMPN    b
+    JUMP     c
+b:
+    COPYTO   0
+    SUB      0
+    SUB      0
+c:
+    OUTBOX  
+    JUMP     a
+
+

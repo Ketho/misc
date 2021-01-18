@@ -1,0 +1,34 @@
+-- HUMAN RESOURCE MACHINE PROGRAM --
+-- size 24/19
+-- speed 138/156
+
+BUMPUP   9
+a:
+    INBOX   
+    COPYTO   0
+    COPYFROM 9
+    COPYTO   5
+    COPYTO   6
+    COPYFROM 9
+    OUTBOX  
+    COPYFROM 9
+    OUTBOX  
+b:
+    COPYFROM 5
+    ADD      6
+    COPYTO   7
+    SUB      0
+    JUMPN    d
+    JUMPZ    c
+    JUMP     a
+c:
+d:
+    COPYFROM 7
+    OUTBOX  
+    COPYFROM 6
+    COPYTO   5
+    COPYFROM 7
+    COPYTO   6
+    JUMP     b
+
+
