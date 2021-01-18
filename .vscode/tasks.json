@@ -57,7 +57,7 @@
 		{
 			"label": "FindGlobals",
 			"type": "shell",
-			"command": "luac5.1 -l -p '${relativeFileDirname}' | lua5.1 'E:/Ready/findglobals/globals.lua' '${file}'",
+			"command": "luac5.1 -l -p '${relativeFileDirname}'; lua5.1 'E:/Ready/findglobals/globals.lua' '${file}'",
 			"presentation": {
 				"showReuseMessage": false,
 				"clear": true
@@ -87,7 +87,17 @@
 		{
 			"label": "C",
 			"type": "shell",
-			"command": "gcc -o '${fileBasenameNoExtension}' '${file}' -std=c11; ./${fileBasenameNoExtension}",
+			"command": "gcc -o '${fileBasenameNoExtension}' '${file}' -std=c18; ./${fileBasenameNoExtension}",
+			"presentation": {
+				"showReuseMessage": false,
+				"clear": true
+			},
+			"problemMatcher": [],
+		},
+		{
+			"label": "C++",
+			"type": "shell",
+			"command": "g++ -o '${fileBasenameNoExtension}' '${file}' -std=c++17; ./${fileBasenameNoExtension}",
 			"presentation": {
 				"showReuseMessage": false,
 				"clear": true
@@ -108,12 +118,26 @@
 			"label": "Java",
 			"type": "shell",
 			//"command": "javac '${file}' | java '${fileDirname}\\${fileBasenameNoExtension}'",
-			"command": "cd '${fileDirname}' | javac '${fileBasename}' | java '${fileBasenameNoExtension}'",
+			"command": "cd '${fileDirname}' | javac '${fileBasename}'; java '${fileBasenameNoExtension}'",
 			"presentation": {
 				"showReuseMessage": false,
 				"clear": true
 			},
 			"problemMatcher": [],
-		}
+		},
+		{
+			"label": "msvc build",
+			"type": "shell",
+			"command": "cl.exe",
+			"args": ["/EHsc", "/Zi", "/Fe:", "helloworld.exe", "helloworld.cpp"],
+			"group": {
+			  "kind": "build",
+			  "isDefault": true
+			},
+			"presentation": {
+			  "reveal": "always"
+			},
+			"problemMatcher": "$msCompile"
+		  }
 	]
 }
