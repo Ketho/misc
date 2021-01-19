@@ -1,0 +1,20 @@
+-- 7 Billion Humans (2231) --
+-- 21: Grote Gegevens --
+-- size 9/8
+-- speed 24/32
+
+a:
+if s != printer:
+	step s
+	jump a
+endif
+b:
+takefrom s
+if myitem < 50:
+	step w
+	giveto s
+	step e
+	jump b
+endif
+
+

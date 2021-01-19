@@ -1,0 +1,21 @@
+-- 7 Billion Humans (2231) --
+-- 18: Unieke Afdoening --
+-- size 10/7
+-- speed 19/12
+
+step w
+pickup c
+a:
+if s == worker:
+	step e
+	jump a
+endif
+b:
+step s
+if s == shredder:
+	giveto s
+	end
+endif
+jump b
+
+

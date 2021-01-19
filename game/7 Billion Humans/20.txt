@@ -1,0 +1,26 @@
+-- 7 Billion Humans (2231) --
+-- 20: Inverteer de Lijn --
+-- size 13/9
+-- speed 11/11
+
+pickup s
+a:
+if sw == hole:
+	step s
+	jump b
+else:
+	step w
+endif
+jump a
+b:
+c:
+if e != hole and
+ e != datacube:
+	step e
+else:
+	drop
+	end
+endif
+jump c
+
+

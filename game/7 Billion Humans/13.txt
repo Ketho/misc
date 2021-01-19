@@ -1,0 +1,59 @@
+-- 7 Billion Humans (2231) --
+-- 13: Injectie Plekken 2 --
+-- size 21/10
+-- speed 75/55
+
+step s
+pickup c
+comment 0
+step s
+step s
+comment 2
+a:
+b:
+step e
+if c == nothing:
+	drop
+endif
+if c == datacube and
+ e == wall:
+	step s
+	step s
+	jump c
+else:
+	jump a
+endif
+c:
+comment 1
+d:
+step w
+if c == nothing:
+	drop
+endif
+if c == datacube and
+ w == wall:
+	step s
+	step s
+	jump b
+endif
+jump d
+
+
+DEFINE COMMENT 0
+eJztjz9LQmEUh5/PkURDYhBiqKt/CHGIkhYnB0G4yO0uioYIQfwQkYtDU0NhqJA4NIhIhERDQzT1oTz3
+4tJ3uA888PI773vOeXOADqibrmL0zQ1BdoTDseUJ6iTxOOOWNPfKMCbLlAwLUqx1yodOzDgbHVoWcEVP
+ZTqUzCI98gzNBwo8cc7SaitdsOKSNyrMucY3+6rQDmdXcVRjoAbvNK12Yz08m9+y/h226vKpO0bh3RGe
+fH72Z1ePLPTMtyb86oU/2/SLGb7m9v7V/hIREfGPHRxtPcg;
+
+DEFINE COMMENT 1
+eJztjjEKwlAQBec0gpWdSJAQUokQERtLC4NYiIiVYIp3ABFEC0srCV+JjRZWgidz8/UGthmYYncf7GsA
+qtM0U9UoiLhSkhAoITZTur/dgDZD248J/Nxjxcj85s/q4zQhL0eJFmKqjLu/i5ANMTuzZM2MjLm25p6F
+Dix97Eakgo4uHHHWx/H2+ZN1zM2H/X8S6mWtKioq/uYDR1IqgQ;
+
+DEFINE COMMENT 2
+eJztj71KA1EUhL9nSeUbRAnRFYMElbgEf0DEysLCUkljMVht4g+4EBSJuKCmsLBxSSEiFgmIiMgiok0i
+QSS1tYVn17cImcNw517mzjmnACjNsEZYIUNEjAx5OTjKMcqsscik5lhinjU7N1RkSy7bmsLTBBWNGbOm
+x/HI4zPNMS6heSMWeY8jVbK8knk26SX3M1zFrkNLP2BZ+6xSQfK4pMwdOzxpjzf5fHJE17xtTokU8Gi8
+N93ghCvrVFeVwHSNc2q6oG51Y/n/fUMWdE1gfCHkNXlr2pQtRJNusm+Ir1t29WDzx+jh8M26OjzT4Sv5
+E5HSB0P8kOOXGQYYoE/wBzsxXs8;
+

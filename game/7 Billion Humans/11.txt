@@ -1,0 +1,15 @@
+-- 7 Billion Humans (2231) --
+-- 11: Injectie Plekken 1 --
+-- size 6/5
+-- speed 14/7
+
+step s
+pickup c
+a:
+step s
+if w == datacube:
+	drop
+endif
+jump a
+
+

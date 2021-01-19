@@ -1,0 +1,26 @@
+-- 7 Billion Humans (2231) --
+-- 10: Avontuurlijk Noodgeval --
+-- size 9/12
+-- speed 198/25
+
+a:
+step w
+if c != datacube:
+	jump a
+endif
+b:
+if c == 1:
+	step n
+endif
+if c == 2:
+	step e
+endif
+if c == 3:
+	step s
+endif
+if c == 4:
+	step w
+endif
+jump b
+
+

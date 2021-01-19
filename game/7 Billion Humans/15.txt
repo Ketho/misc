@@ -1,0 +1,37 @@
+-- 7 Billion Humans (2231) --
+-- 15: Versnipper Lijnen --
+-- size 10/9
+-- speed 23/23
+
+a:
+comment 1
+b:
+step n
+if n == datacube:
+	pickup n
+	jump c
+endif
+jump b
+c:
+comment 0
+d:
+step s
+if s == shredder:
+	giveto s
+	jump a
+endif
+jump d
+
+
+DEFINE COMMENT 0
+eJztjztLQ0EUhL//JHixEy0T5CJB4yXGIEFFIaBc3yJTWIii+IjxUQWLFJa6hCBRbmPsLP09TpJ/IRk4
+zJ45O7Nnc4DGiF1ljfNOv4+YZYKYafKaIe8uVoE55qmwQE0JctVVpGU9KKarHJkmXZEzItqDnE1KrJKo
+Spllqlqi5tORFjkzP6nCi2cd1vhkg8zTzJ6uUl61S1P7XHLAsTnVHuvatquPQwqcWDuloXP7L/zeNSk3
+rHDrHe/YUsP+e+c80NGj7zw7q8XOwP9mf6Ck4MxgNQz/bU7U9p4fXPHFLz1++KZuLqrHFCOM8A/xB9tl
+WFQ;
+
+DEFINE COMMENT 1
+eJztjs0KAQEUhb8nkSzFYsgkaRazsGFmIllZycZP0yiRzTgifwvJQvMoHs/1DpZz6nS6dX5uFZCDi4Nv
+OledVA3uNHnRJpNHhs9bHR50kUKWDAiNrvrUFOERMKFnmcA8EU+NTH+9CyrmHmrG53eT2E5imRVlbShq
+R0Gp8UBJJ/NeaOlqTTfGplOd7Z8jMXsSbY1rYsW2lSNHjr/hC6JyK9k;
+

@@ -1,0 +1,20 @@
+-- 7 Billion Humans (2231) --
+-- 7: Verzamel Depot --
+-- size 9/5
+-- speed 6/6
+
+a:
+step s
+if s == datacube:
+	pickup s
+else:
+	jump a
+endif
+b:
+step s
+if s == hole:
+	drop
+endif
+jump b
+
+
