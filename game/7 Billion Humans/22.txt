@@ -1,0 +1,17 @@
+-- 7 Billion Humans (2231) --
+-- 22: Koninklijk Getal --
+-- size 6/6
+-- speed 9/11
+
+pickup s
+a:
+if myitem < e or
+ myitem < w:
+	b:
+	step s
+	jump b
+endif
+step e
+jump a
+
+
