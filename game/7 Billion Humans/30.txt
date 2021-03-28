@@ -1,0 +1,16 @@
+-- 7 Billion Humans (2231) --
+-- 30: Vul de Vloer --
+-- size 7/6
+-- speed 349/170
+
+mem1 = nearest printer
+a:
+if c == something:
+	step nw,w,sw,n,s,ne,e,se
+else:
+	drop
+	takefrom mem1
+endif
+jump a
+
+
