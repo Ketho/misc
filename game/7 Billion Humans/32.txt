@@ -1,0 +1,26 @@
+-- 7 Billion Humans (2231) --
+-- 32: Creatief Kronkelen --
+-- size 12/6
+-- speed 49/39
+
+a:
+if w == datacube and
+ w == 0:
+	step w
+else:
+	if e == datacube and
+	 e == 0:
+		step e
+	else:
+		if s == datacube and
+		 s == 0:
+			step s
+		endif
+	endif
+endif
+pickup c
+write 99
+drop
+jump a
+
+
