@@ -1,0 +1,17 @@
+-- 7 Billion Humans (2231) --
+-- 33: Data Back-up Dag --
+-- size 9/8
+-- speed 3/3
+
+if w > e:
+	mem1 = set w
+	mem2 = set e
+else:
+	mem1 = set e
+	mem2 = set w
+endif
+pickup mem1
+write mem2
+drop
+
+
