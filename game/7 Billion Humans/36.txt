@@ -1,0 +1,56 @@
+-- 7 Billion Humans (2231) --
+-- 36: Zoek en Vernietig 2 --
+-- size 18/10
+-- speed 212/145
+
+a:
+comment 0
+mem1 = set nothing
+b:
+step n
+if n == datacube:
+	if mem1 == nothing or
+	 mem1 > n:
+		mem1 = set n
+	endif
+endif
+if n == wall:
+	jump c
+endif
+jump b
+c:
+comment 1
+d:
+if s == mem1:
+	pickup mem1
+	jump e
+endif
+step s
+jump d
+e:
+comment 2
+f:
+step s
+if s == shredder:
+	giveto s
+	jump a
+endif
+jump f
+
+
+DEFINE COMMENT 0
+eJztjc0KQVEURtcDKSKSdEUxkAxuMpKBJL+lTETdtrmkGyYkEyWkzA0MJBnJE9lHHsAD3LVbg/11vn3C
+KD7i+ClIgKY6Ez9HExMkIklipLG+e4gKCWpkVEOJqJqXIjuzSouUtCmrfalz+2YNsrTI0aFAlyo9Bjp3
+GXLBYSyOpiO9aN5OsGSqf7i/rovNQrsrdYMte9qcmciZk86NA0+2vGXNmyUv5jy0e8XDw+NvPrjEMts;
+
+DEFINE COMMENT 1
+eJztjs0KAQEUhb+XoggjC4qIGQsLyYJCslDGX3RXkmRhZWOBmmZDEs2CPJs78wQeYE59955One6NAJIg
+rTQkyZYkH/wspplBnCxRCkqZDCZ5LJ0WTTFpUaFDkb7kGEiGAQa9oNslRRvX96wosdTeXJmqH1OVEXVG
+tHRPNFuzYM+Gg+w4BJ0LCTnrPydsOXJTnkH+popHTe7adfWmwxAHW5nJlb28eIjHl1ChQv2tH0DYNJg;
+
+DEFINE COMMENT 2
+eJztjjEKwlAQRN8ZRIVoo51FwCKgKBYpgoUoiSCYUkTBUhsJ0WILBQvPYGEtFlZBREQk53ITvIB9Hiz8
+nf07OxZKHocCXSniiUFAiSsGz2REDlu1jlToYOJInT4WvjRY0CKkzVHrpO8LTSKxeIlJLDViqrylzCOx
+kSE2Lgfd/qS9p/1IvSd6d04v1VwC8dkyZScz/ZtoA83icpOxek+4p5k2miXUrCvOLIlYq77/zTIyMv7i
+Cwy9LHQ;
+
