@@ -1,0 +1,83 @@
+-- 7 Billion Humans (2231) --
+-- 38: Zoek en Vernietig 3 --
+-- size 38/22
+-- speed 64/33
+
+mem1 = set 99
+if s == shredder:
+	jump a
+else:
+	jump b
+endif
+comment 2
+b:
+c:
+step n
+if n < mem1:
+	mem1 = set n
+endif
+if n == wall:
+	jump d
+endif
+jump c
+d:
+e:
+if s == mem1:
+	pickup s
+endif
+if s == wall:
+	step n
+	drop
+	jump f
+endif
+step s
+jump e
+comment 1
+a:
+step e
+mem1 = set 99
+g:
+if e == datacube:
+	jump h
+else:
+	jump g
+endif
+h:
+i:
+step e
+if c < mem1:
+	mem1 = set c
+endif
+if e == wall:
+	jump j
+endif
+jump i
+j:
+k:
+if w == mem1:
+	pickup w
+endif
+if s == shredder:
+	giveto s
+	jump l
+endif
+step w
+jump k
+comment 0
+f:
+l:
+
+
+DEFINE COMMENT 0
+eJztjM0KAQEUhb+nkRQLCwoNJiwkK03CysJCfoaVhXRFFsTCQlZTdhay0KTJUvNgrskDeID56tQ95557
+U4DEMIny4EucEkn1ZUyp6PzdJ5hKWpXBFkOVZxp0I9zIqorcA9+hpmrQ0q7FSRo8g7xNnS5zGeAxxGXE
+jDE9sWkyoRp0FlQQLJb0Wf3+rTXbUGBLTg7kOGLImbo4jOSCw4Wrzp5mvuzx2fGWDS+9cQkJCfmLD1OE
+Mfs;
+
+DEFINE COMMENT 1
+eJwTZmBgaFBlCGjQYnBpMGYwY7BiMGhwY9Bh8GLQY/BhMGLwZbBo8GUIArKTGDwZihpsGWYB1R4D6jnT
+YAakvRmOMQQznGoIYzjFMApGwSgYcgAAHTUSQQ;
+
+DEFINE COMMENT 2
+eJzjYAACHwYrBjeGDQ2uDCdA3AYvBjsGG4YsBkuGAoZRMApGwbAGAF3bBWk;
+
