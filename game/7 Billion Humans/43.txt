@@ -1,0 +1,26 @@
+-- 7 Billion Humans (2231) --
+-- 43: Multiplication Table --
+-- size 15/11
+-- speed 66/53
+
+a:
+step n
+if n == wall:
+	mem1 = set c
+	mem2 = set 1
+	step s
+	step s
+	jump b
+endif
+jump a
+b:
+c:
+mem3 = calc mem1 x mem2
+pickup c
+write mem3
+drop
+step s
+mem2 = calc mem2 + 1
+jump c
+
+
